@@ -1,13 +1,13 @@
 FROM rogerpq/C_ll_C:alpine
 
 #clonning repo 
-RUN git clone https://github.com/rogerpq/RepthonAr/tree/master /root/repthon
+RUN git clone https://github.com/rogerpq/Repthon/tree/main /root/pyUltroid
 #working directory 
-WORKDIR /root/repthon
+WORKDIR /root/pyUltroid
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/repthon/bin:$PATH"
+ENV PATH="/home/pyUltroid/bin:$PATH"
 
-CMD ["python3","-m","repthon"]
+CMD ["python3","-m","pyUltroid"]
