@@ -7,8 +7,11 @@
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
+    "ALIVE_NAME": {
+      "description": "اســم حســـابك التلـي",
+      "value": ""
     },
-    "API_ID": {
+    "APP_ID": {
       "description": "كـود ايبي ايـدي〔 App id 〕الصغيـر",
       "value": ""
     },
@@ -16,15 +19,29 @@
       "description": "كـود ايبي هـاش〔 Api hash 〕..",
       "value": ""
     },
-    "SESSION": {
+    "STRING_SESSION": {
       "description": "كـــود تيـــرمكـــس - الكـود الكبيـر مـن حـافظـة حسـابـك",
       "value": ""
     },
-    "BOT_TOKEN": {
+    "TG_BOT_USERNAME": {
+      "description": "معـــرف البـــوت - من بـوت فـاذر〔 @Botfather 〕بــدون @..",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
       "description": "تـــوكـــن البـــوت - من بـوت فـاذر〔 @Botfather 〕..",
       "value": ""
     },
-    "HEROKU_API": {
+    "COMMAND_HAND_LER": {
+      "description": "نقطـــة الاوامـــر〔 . 〕لا تغيــرهـــا",
+      "value": ".",
+      "required": false
+    },
+    "ENV": {
+      "description": "لا تغيــرهـــا",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
       "description": "كـــود مفتـــاح هيروكـــو - تروح ع الرابـط » https://dashboard.heroku.com/account  ع آخـر خانـه وتنسـخ الكـود لهنـا",
       "value": "",
       "required": false
@@ -32,6 +49,11 @@
     "HEROKU_APP_NAME": {
       "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انكلـش صغيـره",
       "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "المنطقـــه الزمنيـــه لا تغيــرهـــا",
+      "value": "Asia/Baghdad",
       "required": false
     },
     "UPSTREAM_REPO": {
@@ -63,3 +85,4 @@
   },{
     "url": "heroku/python"
   }],
+  }
